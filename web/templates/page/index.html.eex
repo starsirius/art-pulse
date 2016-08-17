@@ -1,0 +1,15 @@
+<div class="title">
+  <h1>They are talking about art! <a href="https://github.com/starsirius/pulse" target="_blank" class="monospace">&lt;/&gt;</a></h1>
+  <h2>Made with :D by <a href="https://github.com/starsirius" target="_blank">Chung-Yi Chi</a>.</h2>
+</div>
+
+<div class="controls">
+  <div class="play-control pause">
+    <span class="left"></span><span class="right"></span>
+  </div>
+
+  <div class="channel-toggle partners-channel-toggle" data-channel-id="partners">Galleries/Museums</div>
+  <div class="channel-toggle artists-channel-toggle" data-channel-id="artists">Artists</div>
+</div>
+
+<div id="tweets"></div>

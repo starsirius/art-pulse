@@ -1,0 +1,199 @@
+/* This file is for your main application css. */
+
+body {
+  background-color: #111;
+}
+
+h1,
+h2,
+h1 a,
+h2 a,
+h1 a:hover,
+h1 a:visited,
+h2 a:hover,
+h2 a:visited {
+  color: #999;
+}
+
+h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 11px;
+  margin-top: 0;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.title,
+.controls {
+  text-align: right;
+}
+
+.card {
+  position: relative;
+  background-color: #eee;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.created-at {
+  margin: 20px 0;
+  text-align: right;
+  color: #999;
+}
+
+.card .user,
+.card .tweet {
+  margin-bottom: 10px;
+}
+
+.card .user-profile-image,
+.card .user-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card .user-profile-image {
+  margin-right: 5px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card .user-name {
+  font-weight: bold;
+}
+
+.card .location,
+.card .user-screen-name {
+  color: #999;
+}
+
+/* Ribbon */
+.github-fork-ribbon {
+  font-size: 5px;
+}
+
+.github-fork-ribbon:before,
+.github-fork-ribbon:after {
+  height: 3em;
+  top: 2.8em;
+}
+
+.partners .github-fork-ribbon:before {
+  background-color: #090;
+}
+
+.artists .github-fork-ribbon:before {
+  background-color: #a00;
+}
+
+.artsy .github-fork-ribbon:before {
+  background-color: #6A0BC1;
+}
+
+/* Controls */
+.controls {
+  margin-bottom: 50px;
+}
+
+/* Play Control (borrowed from http://codepen.io/morgun/pen/mInAk) */
+.play-control {
+  margin: 20px;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+}
+.play-control,
+.play-control .left,
+.play-control .right,
+.play-control:before {
+  display: inline-block;
+  vertical-align: middle;
+  transition: border 0.4s, width 0.4s, height 0.4s, margin 0.4s;
+  transition-tiomig-function: cubic-bezier(1, 0, 0, 1);
+}
+.play-control:before {
+  content: "";
+  height: 36px;
+}
+.play-control.pause .left,
+.play-control.pause .right {
+  margin: 0;
+  border-left: 11.88px solid #999;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  height: 31.176px;
+}
+.play-control.pause .left {
+  border-right: 7.2px solid transparent;
+}
+.play-control.play .left {
+  margin-left: 6px;
+  border-left: 15.588px solid #999;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right: 0px solid transparent;
+  height: 36px;
+}
+.play-control.play .right {
+  margin: 0;
+  border-left: 15.588px solid #999;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  height: 0px;
+}
+.play-control:hover .left,
+.play-control:hover .right {
+  border-left-color: #ccc;
+}
+
+/* Channel Toggles */
+.channel-toggle {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 10px;
+  color: #eee;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.channel-toggle:last-child {
+  margin-right: 0;
+}
+
+.partners-channel-toggle[data-joined="true"] {
+  background-color: #090;
+}
+
+.artists-channel-toggle[data-joined="true"] {
+  background-color: #a00;
+}
+
+@media (max-width: 768px) {
+  .channel-toggle {
+    font-size: 12px;
+    margin: 2px;
+  }
+  .controls {
+    margin-bottom: 10px;
+  }
+  /* TODO: FlipInX doesn't work well on iOS Safari.
+   * Fallback to fadeIn.
+   */
+  .flipInX {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+  }
+}
