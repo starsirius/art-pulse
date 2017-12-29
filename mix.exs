@@ -30,7 +30,7 @@ defmodule Pulse.Mixfile do
   defp deps do
     [{:extwitter, "~> 0.7"},
      {:oauth, github: "tim/erlang-oauth"},
-     {:phoenix, "~> 1.2.0"},
+     {:phoenix, "~> 1.3.0"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
